@@ -24,6 +24,7 @@
                                 filter_cond=None,
                                 compare_filter_cond=None,
                                 tol=0.0) -%}
+    {{ deprecation_warning('equal_expression') }}
 
     {%- set compare_model = model if not compare_model else compare_model -%} 
     {%- set compare_expression = expression if not compare_expression else compare_expression -%} 

@@ -1,4 +1,5 @@
 {%- macro test_frequency(model, date_col, date_part="day", filter_cond=None, test_start_date=None, test_end_date=None) -%}
+{{ deprecation_warning('frequency') }}
 {% if not execute %}
     {{ return('') }}
 {% endif %}
